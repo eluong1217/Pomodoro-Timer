@@ -96,11 +96,18 @@ html {
     text-align: center;
   }
   
-  button {
+  .button-container {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  button {
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -108,8 +115,15 @@ html {
     background: none;
     outline: none;
     color: #d8e9ef;
-}
+    cursor: pointer;
+  }
   
   button:hover {
     color: #0dbe51;
+  }
+  
+  .paused-text {
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 100%;
+    color: #5bc45b;
   }
